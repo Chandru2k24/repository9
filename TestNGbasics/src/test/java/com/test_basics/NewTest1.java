@@ -6,34 +6,26 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
 public class NewTest1 {
-  @Test
+	@Test
+	public void z()
+	{
+		System.out.println("log in z successfully");
+	}
+	
+	@Test
+	public void c()
+	{
+		System.out.println("Log in c successfully");
+	}
+  @Test(priority=5,enabled=false)
   public void f() {
-	 
-	  	  String str1 = new String("TestNG");
-	  	  String str2=new String("TestNG");
-	  	  String str3=null;
-	  	  String str4="TestNG";
-	  	  String str5="TestNG";
-	  	  String str6=new String("Not_TestNG");
-	  	  int val1=5;
-	  	  int val2=6;
-	  	  Assert.assertEquals(str1, str2);
-	  	  System.out.println("Equals Assertio is successful");
-	  	 // Assert.assertNotEquals(str1, str2);
-	  	  System.out.println("Not Equals Assertio is successful");
-	  	  Assert.assertTrue(val1<val2);
-	  	  System.out.println("True Assertion is successfull");
-	  	 Assert.assertEquals(str4, str5);
-	  	  System.out.println("Equals Assertio is successful");
-	  	  
-	    }
-	  
-  @BeforeTest
-  public void beforeTest() {
+	  System.out.println("Log in  f successfully");
   }
-
-  @AfterTest
-  public void afterTest() {
+  @ignore
+  
+  @Test(priority=4,)
+  public void a()
+  {
+	  System.out.println("log in a successfully");
   }
-
 }

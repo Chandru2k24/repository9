@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test_basics.Omayoassert">
+      <class name="Dataproviders.TestClass">
         <methods>
-          <include name="f"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="search" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.test_basics.Omayoassert -->
+      </class> <!-- Dataproviders.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
